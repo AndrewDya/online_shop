@@ -1,0 +1,27 @@
+# Игнорирование файлов и каталогов, созданных системой
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*/__pycache__/
+*.db
+*.sqlite3
+*.log
+
+# Игнорирование настроек PyCharm и Visual Studio Code
+.idea/
+.vscode/
+
+# Игнорирование миграций и файлов медиа
+*.migration
+*.sqlite3
+media/
+
+# Игнорирование настроек и временных файлов Django
+*.pyc
+db.sqlite3
+*.log
+*.pid
+*.coverage
+htmlcov/
+env/
