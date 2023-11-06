@@ -1,0 +1,24 @@
+/* chat.css */
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#chatImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #3498db; /* Синий цвет фона значка */
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s; /* Анимация изменения цвета и масштаба */
+}
+
+#chatImg:hover {
+    background-color: #2581c6; /* Новый цвет при наведении */
+    transform: scale(1.2); /* Увеличение при наведении */
+}

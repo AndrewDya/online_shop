@@ -61,7 +61,6 @@ p {
 
 .game-block p {
     font-size: 16px;
-    color: #777;
 }
 
 .game-block::after {
@@ -84,4 +83,32 @@ p {
 
 .game-block a:hover {
     background-color: #003c80; /* Темно-синий фон при наведении на ссылку */
+}
+/* styles.css */
+.nav-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.nav-button {
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #2581c6;
+}
+.price {
+    font-weight: bold;
+    color: #000; /* Цвет текста для цены */
 }
