@@ -1,11 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e6f7ff;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #333;
+    background-color: #0056b3; /* Темно-синий цвет фона */
     color: #fff;
     padding: 20px;
 }
@@ -18,23 +20,68 @@ h1 {
 p {
     font-size: 18px;
 }
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
 .game-block {
     border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px;
+    padding: 20px;
+    margin: 20px;
     text-align: center;
-    display: inline-block;
-    width: 200px;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+}
+
+.game-block:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0; /* Светло-серый фон при наведении */
 }
 
 .game-block img {
     max-width: 100%;
+    border: 1px solid #ddd;
+    margin-top: 10px;
 }
 
 .game-block h3 {
-    font-size: 18px;
+    font-size: 20px;
+    margin: 10px 0;
 }
 
 .game-block p {
-    font-size: 14px;
+    font-size: 16px;
+    color: #777;
+}
+
+.game-block::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.game-block a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    background-color: #0056b3; /* Темно-синий цвет фона для ссылок */
+    color: #fff; /* Белый цвет текста для ссылок */
+    padding: 10px; /* Добавьте отступ для более крупных кнопок */
+    border-radius: 5px; /* Закруглите углы кнопок */
+}
+
+.game-block a:hover {
+    background-color: #003c80; /* Темно-синий фон при наведении на ссылку */
 }
