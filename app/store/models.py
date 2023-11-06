@@ -8,6 +8,7 @@ class Game(models.Model):
     release_date = models.DateField()
     genre = models.CharField(max_length=50)
     platform = models.CharField(max_length=50)
+    image = models.ImageField(upload_to='games/', default='', blank=True)
 
     def __str__(self):
         return self.title
